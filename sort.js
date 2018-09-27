@@ -1,5 +1,12 @@
+var sortNumber = function (number) {
+   number.sort(function (a, b) {
+       if (a === b) {
+           return 0;
+       }
+       return a < b ? -1 : 1;
+   });
+};
+
 var number = [19, 3, 81, 1, 24, 21];
+sortNumber(number);
 console.log(number);
-add 変更をインデックスに登録する
-commit インデックスの状態を記録する
-pull リモートリポジトリの内容を取得する
